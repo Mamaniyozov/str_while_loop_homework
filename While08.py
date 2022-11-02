@@ -5,5 +5,13 @@ def main(s):
         s: str
     Returns:
         int: return answer
-    """
-    return
+    """ 
+    i=0
+    k=0
+    while i<len(s):
+        if s[i].isdigit():
+            if int(s[i])%2==1:
+                k+=1
+        i+=1
+    return k
+print(main('287438'))
